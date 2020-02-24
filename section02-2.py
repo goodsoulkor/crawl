@@ -6,7 +6,7 @@ import urllib.request as req
 from urllib.error import URLError, HTTPError
 
 # 다운로드 경로 및 파일명
-path_list = ["./data/image1.jpg", "./data/index.html"]
+path_list = ["./data/test1.jpg", "./data/index.html"]
 
 # 다운로드 리소스 url
 target_list = [
