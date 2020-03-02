@@ -48,7 +48,7 @@ print(r.headers)
 # 본문 정보
 print(r.text)
 
-# json 변환
+# json -> dict 변환
 print(r.json())
 
 # key 반환
