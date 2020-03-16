@@ -73,13 +73,11 @@ pro_list = soup.select("div.main_prodlist.main_prodlist_list > ul > li")
 # # print(pro_list)
 
 # # 필요 정보 추출
-for i, v in enumerate(pro_list, 1):
+for v in pro_list:
     # 임시 출력
     # print(v)
 
     if not v.find("div", class_="ad_header"):
-        # index
-        print("Rank : {}".format(i))
         # 상품명, 이미지 , 가격
         print(v.select("p.prod_name > a")[0].text.strip())
         if v.find("img", class_="image_lazy"):
